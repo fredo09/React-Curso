@@ -1,0 +1,17 @@
+/**
+ * Componente Modal
+ */
+
+ import React from 'react';
+ import './modal.css';
+
+ function Modal(props) {
+   return (
+     <div className="Modal">
+      {props.children}
+      <button onClick={props.hadleClick} className="Modal-close"/>
+     </div>
+   )
+ }
+
+ export default Modal;
